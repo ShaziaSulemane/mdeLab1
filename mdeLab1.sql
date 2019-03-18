@@ -1,3 +1,10 @@
+DROP TABLE empresa;
+DROP TABLE edificios;
+DROP TABLE divisoes;
+DROP TABLE equipEletricos;
+DROP TABLE consumosEnergia;
+DROP TABLE anomalias;
+
 create table empresa (
     id NUMBER,
     name varchar(20)
@@ -10,7 +17,7 @@ create table edificios (
     localidade VARCHAR(20),
     gps VARCHAR(20),
     area NUMBER(4),
-    tipologia VARCHAR
+    tipologia VARCHAR(1)
 );
 
 create table divisoes (
