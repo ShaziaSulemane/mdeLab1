@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3C0B5C31-D008-E236-7427-159D0883405C" name="tipologia">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:50:10 UTC</createdTime>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipologia" id="4AAC050B-DB92-5844-85F1-EB3F46409958">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:50:19 UTC</createdTime>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_edificio" id="36879690-A9E1-BD2F-8764-E0DAFF5FCFFF">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:50:38 UTC</createdTime>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="91F061F2-8283-55B4-7F32-169219DC6F17" name="tipologia PK">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:50:33 UTC</createdTime>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4AAC050B-DB92-5844-85F1-EB3F46409958</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

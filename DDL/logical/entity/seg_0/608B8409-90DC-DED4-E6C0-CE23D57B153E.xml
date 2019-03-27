@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="608B8409-90DC-DED4-E6C0-CE23D57B153E" name="divisao_equipamento">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:09:52 UTC</createdTime>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_divisao" id="3436E3AB-DB8E-ECB9-13D5-1066AEF046CB">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:21:19 UTC</createdTime>
+<generatorID>AD67A6BB-4E0B-59BB-F9BC-A0F717B8ED51</generatorID>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<referedAttribute>590D9885-0D79-E2FA-25F6-478823AA9C7A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_equip" id="A183FED7-030C-F1C5-C6A6-1EA502297A5A">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:21:44 UTC</createdTime>
+<generatorID>0858946E-2450-296B-A6D9-1FE0C6B2AEB9</generatorID>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<referedAttribute>219C5A86-A164-A5A1-B7F2-8E7DBC7A4F6A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_edificio" id="EA78CE30-2A7E-CC17-E937-EA6D48582683">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:49:17 UTC</createdTime>
+<generatorID>AD67A6BB-4E0B-59BB-F9BC-A0F717B8ED51</generatorID>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<referedAttribute>097F9062-5DFB-20EA-257D-C8C267361006</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tipologia" id="2311E7B4-7C1E-A410-1C41-15F2FE174286">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:51:05 UTC</createdTime>
+<generatorID>AD67A6BB-4E0B-59BB-F9BC-A0F717B8ED51</generatorID>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<referedAttribute>53BF45E2-A29D-B96F-3C23-87FF594C8956</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EAAEDB74-6A14-A8C7-01AF-45B0437CB0DA" name="divisao_equipamento PK">
+<createdBy>Shazia</createdBy>
+<createdTime>2019-03-25 11:20:16 UTC</createdTime>
+<ownerDesignName>DDL</ownerDesignName>
+<engineerTo>
+<item key="FC323CBC-575C-139C-6C20-423D5FC9B0D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3436E3AB-DB8E-ECB9-13D5-1066AEF046CB</attributeRef>
+<attributeRef>EA78CE30-2A7E-CC17-E937-EA6D48582683</attributeRef>
+<attributeRef>2311E7B4-7C1E-A410-1C41-15F2FE174286</attributeRef>
+<attributeRef>A183FED7-030C-F1C5-C6A6-1EA502297A5A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
