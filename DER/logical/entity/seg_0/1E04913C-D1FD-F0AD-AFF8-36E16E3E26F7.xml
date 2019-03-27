@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E04913C-D1FD-F0AD-AFF8-36E16E3E26F7" name="consumoenergetico">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:35:24 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="horarioinicio" id="BA7BC7B8-3A37-A6D6-0D76-329777A3F0CB">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:35:35 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horariofim" id="75475228-3D23-7BAD-645E-43694E6462BF">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:42:26 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_consumoenergetico" id="F4E6ADEB-DBDA-59EB-1811-CC54B190A12A">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:43:09 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_anomalia" id="D37E1E73-BC41-B105-6D94-CE99A76267F9">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:34:22 UTC</createdTime>
+<generatorID>4AA477D9-18A4-3722-A28A-44E9DA3F6209</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>83C76C36-BDD6-85F7-8494-F8A6AF595EA7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9CBCB6E5-0229-DB10-6749-3FA0C4A3C481" name="consumoenergetico PK">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:35:45 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F4E6ADEB-DBDA-59EB-1811-CC54B190A12A</attributeRef>
+<attributeRef>D37E1E73-BC41-B105-6D94-CE99A76267F9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

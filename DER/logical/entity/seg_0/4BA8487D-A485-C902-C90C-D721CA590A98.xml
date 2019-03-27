@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4BA8487D-A485-C902-C90C-D721CA590A98" name="equipamentoeletrico_divisao">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:32:41 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_relacao" id="DDF794E8-A975-D60E-7925-DD9DD97AC1F9">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:33:40 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_divisao" id="29852384-B351-1162-C267-646FE58293EF">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:18:09 UTC</createdTime>
+<generatorID>86C437F9-17BA-39DB-23CB-D2915FE92753</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>3D8D4C27-5E31-700F-7BAF-3B9E38613995</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_edificio" id="B10156AA-4D2D-F804-0D5E-2C343A9B8BCB">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:18:09 UTC</createdTime>
+<generatorID>86C437F9-17BA-39DB-23CB-D2915FE92753</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>6692E5B9-D869-C25D-DBC1-4A8A79944392</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tarifabihoraria" id="B6F71333-6A5F-928A-07F0-74ED5253B6AF">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:18:09 UTC</createdTime>
+<generatorID>86C437F9-17BA-39DB-23CB-D2915FE92753</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>02FE6398-04C2-E99A-8FA8-B1A964093D46</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tarifanormal" id="F87102E0-A5E7-D3AC-3B7E-F376422D63AB">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:18:09 UTC</createdTime>
+<generatorID>86C437F9-17BA-39DB-23CB-D2915FE92753</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>50FEF008-A994-5BEC-0CC5-3628686D84F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_equipamentoeletrico" id="7D564F69-9EBA-BDE6-D2C9-256A9D81BA94">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:18:51 UTC</createdTime>
+<generatorID>B8E3B529-AB4E-D99A-8E5E-326137DE331C</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>2B021109-8AD8-FD7C-D200-41EB84CD2C11</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_horario" id="6B9ADF26-3A12-95B6-FF05-6959C4284DF2">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:25:24 UTC</createdTime>
+<generatorID>4E85868A-954A-07E7-9386-FA1789180B02</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>4F6B59F4-79AF-3196-90D6-6AA04248C442</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_consumoenergetico" id="99E5C607-25A4-32B4-40F3-C155D6D5E049">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:31:50 UTC</createdTime>
+<generatorID>B4573D0B-218B-177F-D9E6-70E0E5F8F3E9</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>F4E6ADEB-DBDA-59EB-1811-CC54B190A12A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_anomalia" id="F9439D74-FF59-EFC1-D53B-6CBA5369EB07">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 10:34:22 UTC</createdTime>
+<generatorID>B4573D0B-218B-177F-D9E6-70E0E5F8F3E9</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<referedAttribute>D37E1E73-BC41-B105-6D94-CE99A76267F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2B9F0AD2-C362-961B-7B9C-9EAA9EFB20A0" name="equipamentoeletrico_divisao PK">
+<createdBy>pedro</createdBy>
+<createdTime>2019-03-27 09:33:51 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DDF794E8-A975-D60E-7925-DD9DD97AC1F9</attributeRef>
+<attributeRef>29852384-B351-1162-C267-646FE58293EF</attributeRef>
+<attributeRef>B10156AA-4D2D-F804-0D5E-2C343A9B8BCB</attributeRef>
+<attributeRef>B6F71333-6A5F-928A-07F0-74ED5253B6AF</attributeRef>
+<attributeRef>F87102E0-A5E7-D3AC-3B7E-F376422D63AB</attributeRef>
+<attributeRef>7D564F69-9EBA-BDE6-D2C9-256A9D81BA94</attributeRef>
+<attributeRef>6B9ADF26-3A12-95B6-FF05-6959C4284DF2</attributeRef>
+<attributeRef>99E5C607-25A4-32B4-40F3-C155D6D5E049</attributeRef>
+<attributeRef>F9439D74-FF59-EFC1-D53B-6CBA5369EB07</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
