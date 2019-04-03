@@ -27,14 +27,78 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="referencia" id="24879DF0-B386-61EE-EB8A-F5235644B9CF">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 07:31:12 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modelo" id="9261B027-8F8D-4CD1-0FC0-42013ADD050C">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 07:34:01 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="designacao" id="F81E0DF3-51FD-7C0C-0922-76AA54AA427D">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 07:34:22 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tensao_alimentacao" id="D9660324-6ED4-89A0-5426-456F6BACBE6E">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 07:34:44 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="potencia_ativa" id="8A020F98-F30D-F64F-5611-254F17F13451">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 07:36:57 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4CB1D429-3CE9-B592-28E0-F26AD7910C2D" name="equipamentoeletrico PK">
 <createdBy>pedro</createdBy>
 <createdTime>2019-03-27 09:34:41 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

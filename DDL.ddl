@@ -3,14 +3,6 @@
 --   site:      Oracle Database 11g
 --   type:      Oracle Database 11g
 
-drop table anomalia cascade constraints;
-drop table consumoenergetico cascade constraints;
-drop table divisao cascade constraints;
-drop table edificio cascade CONSTRAINTS;
-drop table equipamentoeletrico cascade CONSTRAINTS;
-drop table equipamentoeletrico_divisao cascade constraints;
-drop table horario cascade constraints;
-drop table tarifa cascade CONSTRAINTS;
 
 
 CREATE TABLE anomalia (

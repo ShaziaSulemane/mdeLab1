@@ -40,34 +40,6 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_tarifabihoraria" id="C9F3B27F-35E9-9BC3-1152-FF84CC3DDC13">
-<createdBy>pedro</createdBy>
-<createdTime>2019-03-27 09:56:55 UTC</createdTime>
-<generatorID>3E819D74-6041-B957-E58D-AEBB0FEC8089</generatorID>
-<ownerDesignName>DER</ownerDesignName>
-<engineerTo>
-<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
-</engineerTo>
-<referedAttribute>90B5A58A-EF90-F5CB-94B1-1D150D233D30</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_tarifanormal" id="BB2FA585-0863-095C-50DC-000165F407BC">
-<createdBy>pedro</createdBy>
-<createdTime>2019-03-27 09:57:21 UTC</createdTime>
-<generatorID>023B5DC8-E312-5337-562D-4C07B6502748</generatorID>
-<ownerDesignName>DER</ownerDesignName>
-<engineerTo>
-<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
-</engineerTo>
-<referedAttribute>474A3F5B-3D8A-DFE2-7D3C-4AAC7F2D3138</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="endereco" id="F0842526-8C10-9254-527F-0B3D4216819C">
 <createdBy>pedro</createdBy>
 <createdTime>2019-03-27 10:36:03 UTC</createdTime>
@@ -121,18 +93,19 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipologia_1" id="1A38CF73-9B50-E4A0-833A-9DC8D54B2547">
+<Attribute name="id_tarifa" id="0A55011E-EC01-E4C6-68B8-08A57E087B2C">
 <createdBy>pedro</createdBy>
-<createdTime>2019-03-27 10:39:57 UTC</createdTime>
+<createdTime>2019-04-03 08:01:29 UTC</createdTime>
+<generatorID>6BA15DA6-66A9-F959-93C9-B1175CC55651</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <engineerTo>
 <item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
 </engineerTo>
+<referedAttribute>90B5A58A-EF90-F5CB-94B1-1D150D233D30</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -140,14 +113,13 @@
 <createdBy>pedro</createdBy>
 <createdTime>2019-03-27 09:11:19 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>939E1203-ECC1-48C1-68C3-E1D37048D5B8</attributeRef>
-<attributeRef>C9F3B27F-35E9-9BC3-1152-FF84CC3DDC13</attributeRef>
-<attributeRef>BB2FA585-0863-095C-50DC-000165F407BC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
