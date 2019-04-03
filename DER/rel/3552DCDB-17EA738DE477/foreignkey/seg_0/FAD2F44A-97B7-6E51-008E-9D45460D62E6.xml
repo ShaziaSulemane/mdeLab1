@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FAD2F44A-97B7-6E51-008E-9D45460D62E6" containerWithKeyObject="7A998328-E22A-F436-47F9-50F4438C06C0" localFKIndex="3F3AC375-8653-E108-0356-7F01EA126BE7" name="Relation_6">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>86C437F9-17BA-39DB-23CB-D2915FE92753</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<referredTableLongName>divisao</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5D3BB357-5AD2-EE73-D3C0-18E6D66C202C</referredTableID>
+<keyObject>1E8D79FC-AC24-7E48-3972-CC9282831CF9</keyObject>
+<referredKeyID>1E8D79FC-AC24-7E48-3972-CC9282831CF9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_divisao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

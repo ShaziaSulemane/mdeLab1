@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C255D4D8-D8BD-323B-9890-236BA501CF16" name="tarifa">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>1BC40A12-2F9F-3ED9-B3CB-A5184517458B</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tarifa" id="F5013881-C449-8EA4-40D5-7C343945E683">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>90B5A58A-EF90-F5CB-94B1-1D150D233D30</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_dia" id="E32756DA-FE7F-50F1-8B79-510CA73C0B7D">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>E99BB09B-FF12-886F-0CB7-46526FD1913F</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_tarde" id="EA95CBCB-7864-596E-0938-F870906194AE">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>B5A38960-399E-78AA-8F3A-92F7AE2E7F3B</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_noite" id="7318BB99-2B38-4899-0FEE-F8CF4D0579C5">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>90881A80-FFEA-79BF-E643-19BF444CFFE1</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_mudanca_tarde" id="E23C11BB-5E69-906B-CED8-2A9AE6E70B72">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>B5F9B50A-BC85-9E23-B764-3EC0E8549CD6</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_mudanca_noite" id="0E27973D-B804-CBF5-8A30-BFAE830FEFDA">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>7AA77EC1-902F-0B58-FAE9-AD5EFB1D3CDA</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46E79943-803D-5CCD-EC05-94389AE0C58C" name="tarifa_bi-horaria_PK">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>DD91B49E-56EA-7DC2-9391-DE2C4DFB053A</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5013881-C449-8EA4-40D5-7C343945E683"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

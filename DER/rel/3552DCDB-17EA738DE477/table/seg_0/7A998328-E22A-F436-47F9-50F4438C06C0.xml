@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A998328-E22A-F436-47F9-50F4438C06C0" name="equipamentoeletrico_divisao">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>4BA8487D-A485-C902-C90C-D721CA590A98</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_relacao" id="7362EF43-50BB-6E2B-1B37-5BE9ECD2C7A1">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>DDF794E8-A975-D60E-7925-DD9DD97AC1F9</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_divisao" id="552592E0-BFF1-2B1B-0E5A-E902DEFEF9BD">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>29852384-B351-1162-C267-646FE58293EF</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD2F44A-97B7-6E51-008E-9D45460D62E6" referredColumn="BE47CA2F-537D-F86B-03E2-04F710D36D99"/>
+</associations>
+</Column>
+<Column name="id_equipamentoeletrico" id="4078C945-C4EF-0A74-F717-833DF55502F2">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>7D564F69-9EBA-BDE6-D2C9-256A9D81BA94</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B04D0E79-612B-7CE4-216B-EEBE8C041F5C" referredColumn="010CDAF1-8CA3-F828-A0F3-5A2E765501A5"/>
+</associations>
+</Column>
+<Column name="id_horario" id="01FE8E46-D129-82DE-F4B1-9D4282DBE0FB">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>6B9ADF26-3A12-95B6-FF05-6959C4284DF2</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87B03B10-C83C-7D7A-79B7-DBFBD11F5877" referredColumn="FDC06076-3D84-70E9-114D-75639FF4B7C0"/>
+</associations>
+</Column>
+<Column name="id_consumoenergetico" id="FFE48F5A-BA1C-88C1-EE6F-C3ABD8056A95">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>99E5C607-25A4-32B4-40F3-C155D6D5E049</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CF48F13-8DB8-8F39-2728-269EF5BF005A" referredColumn="12F0E508-93D7-AD41-BB02-99A67BC05110"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01FCEDCE-B20E-95B8-F9B8-08EE17189C46" name="equipamentoeletrico_divisao_PK">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>2B9F0AD2-C362-961B-7B9C-9EAA9EFB20A0</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7362EF43-50BB-6E2B-1B37-5BE9ECD2C7A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F3AC375-8653-E108-0356-7F01EA126BE7" name="Relation_6">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>86C437F9-17BA-39DB-23CB-D2915FE92753</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="552592E0-BFF1-2B1B-0E5A-E902DEFEF9BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B303ECB2-CD9D-407F-1508-FF324D25EE32" name="Relation_7">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>B8E3B529-AB4E-D99A-8E5E-326137DE331C</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4078C945-C4EF-0A74-F717-833DF55502F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="856A83D9-1A50-5690-93CC-E84A91CAB143" name="Relation_8">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>4E85868A-954A-07E7-9386-FA1789180B02</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01FE8E46-D129-82DE-F4B1-9D4282DBE0FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44A1A9AB-C3E2-3A7F-E1A0-D8B98A9397FB" name="Relation_9">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>B4573D0B-218B-177F-D9E6-70E0E5F8F3E9</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFE48F5A-BA1C-88C1-EE6F-C3ABD8056A95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

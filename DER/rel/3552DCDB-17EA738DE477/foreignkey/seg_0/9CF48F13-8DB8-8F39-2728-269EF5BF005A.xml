@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9CF48F13-8DB8-8F39-2728-269EF5BF005A" containerWithKeyObject="7A998328-E22A-F436-47F9-50F4438C06C0" localFKIndex="44A1A9AB-C3E2-3A7F-E1A0-D8B98A9397FB" name="Relation_9">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-03 08:37:38 UTC</createdTime>
+<generatorID>B4573D0B-218B-177F-D9E6-70E0E5F8F3E9</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<referredTableLongName>consumoenergetico</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E87E939E-DD3B-4FBD-D8CC-318B40401079</referredTableID>
+<keyObject>E6B025D7-4F2A-2155-6E8E-9579032C7F2C</keyObject>
+<referredKeyID>E6B025D7-4F2A-2155-6E8E-9579032C7F2C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_consumoenergetico</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
