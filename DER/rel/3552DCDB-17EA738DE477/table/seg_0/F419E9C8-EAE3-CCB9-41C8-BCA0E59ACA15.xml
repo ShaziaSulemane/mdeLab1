@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="555B5A28-0C9F-B24C-9249-71DC635692A6" name="equipamentoeletrico">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F419E9C8-EAE3-CCB9-41C8-BCA0E59ACA15" name="tarifa">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>205DA23A-BC4D-2EA7-5CF9-8B73F27AE261</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>1BC40A12-2F9F-3ED9-B3CB-A5184517458B</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_equipamentoeletrico" id="010CDAF1-8CA3-F828-A0F3-5A2E765501A5">
+<Column name="id_tarifa" id="EB17F493-D7AC-2B96-29CD-3DEC20CF6448">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>2B021109-8AD8-FD7C-D200-41EB84CD2C11</generatorID>
+<createdTime>2019-04-05 12:07:04 UTC</createdTime>
+<generatorID>90B5A58A-EF90-F5CB-94B1-1D150D233D30</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,46 +19,44 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="referencia" id="448FCBA9-473A-7A35-0C68-A7B637D807CF">
+<Column name="preco_dia" id="E5E877C7-C833-BAD0-A6BE-BA15050F8CB3">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>24879DF0-B386-61EE-EB8A-F5235644B9CF</generatorID>
+<createdTime>2019-04-05 12:07:04 UTC</createdTime>
+<generatorID>E99BB09B-FF12-886F-0CB7-46526FD1913F</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="modelo" id="FF8550F6-CE4B-C915-1B05-4DAD6F0F8173">
+<Column name="preco_tarde" id="608E6B50-0846-6A0D-16DB-8609F4EF068A">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>9261B027-8F8D-4CD1-0FC0-42013ADD050C</generatorID>
+<createdTime>2019-04-05 12:07:04 UTC</createdTime>
+<generatorID>B5A38960-399E-78AA-8F3A-92F7AE2E7F3B</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_noite" id="6E3C31AB-387B-E7EC-3393-493EBB259373">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-05 12:07:04 UTC</createdTime>
+<generatorID>90881A80-FFEA-79BF-E643-19BF444CFFE1</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="designacao" id="A20C9899-60A5-9B64-31EA-0418C95E8A17">
+<Column name="hora_mudanca_tarde" id="433C7F47-6E55-1B6C-FDF6-71FA7CCE026D">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>F81E0DF3-51FD-7C0C-0922-76AA54AA427D</generatorID>
-<ownerDesignName>DER</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="tensao_alimentacao" id="EACCB686-2444-7844-5DDC-F46A4C4E898B">
-<createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>D9660324-6ED4-89A0-5426-456F6BACBE6E</generatorID>
+<createdTime>2019-04-05 12:07:04 UTC</createdTime>
+<generatorID>B5F9B50A-BC85-9E23-B764-3EC0E8549CD6</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -66,10 +64,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="potencia_ativa" id="D1FB7258-740D-C168-8479-3B5E04BAFF03">
+<Column name="hora_mudanca_noite" id="A29F75F3-C462-7714-A26B-79EB57C2CBE9">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>8A020F98-F30D-F64F-5611-254F17F13451</generatorID>
+<createdTime>2019-04-05 12:07:04 UTC</createdTime>
+<generatorID>7AA77EC1-902F-0B58-FAE9-AD5EFB1D3CDA</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -79,16 +77,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E671213A-8C86-6C00-D235-C70489CF0341" name="equipamentoeletrico_PK">
+<ind_PK_UK id="585C0C2B-AF79-E82C-88AC-63FC59214228" name="tarifa_bi-horaria_PK">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>4CB1D429-3CE9-B592-28E0-F26AD7910C2D</generatorID>
+<createdTime>2019-04-05 12:07:04 UTC</createdTime>
+<generatorID>DD91B49E-56EA-7DC2-9391-DE2C4DFB053A</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="010CDAF1-8CA3-F828-A0F3-5A2E765501A5"/>
+<colUsage columnID="EB17F493-D7AC-2B96-29CD-3DEC20CF6448"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

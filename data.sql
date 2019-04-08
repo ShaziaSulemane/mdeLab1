@@ -49,7 +49,7 @@ INSERT INTO edificio values (
 
 INSERT INTO edificio values (
     4,
-    'drag shop',
+    'loja',
     'rua rosário dos santos, nº66',
     'lisboa',
     '69.99ºN 69.99ºS',
@@ -97,6 +97,25 @@ INSERT INTO edificio values (
     1
 );
 
+INSERT INTO edificio values (
+    9,
+    'fabrica',
+    'rua casal dos ninhos, nº7',
+    'mafra',
+    '80.5ºN 33.2ºO',
+    1000,
+    1
+);
+
+INSERT INTO edificio values (
+    10,
+    'oficina',
+    'rua da republica, nº27',
+    'ericeira',
+    '83.4ºN 34.5ºO',
+    300,
+    1
+);
 
 INSERT INTO equipamentoeletrico values (
     1,
@@ -144,7 +163,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    5,
+    6,
     'prj 12345',
     'j6123Q',
     'projetor',
@@ -153,7 +172,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    6,
+    7,
     'ptt 12345',
     'tr6123S',
     'computador portatil',
@@ -162,7 +181,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    7,
+    8,
     'mn 12345',
     'nn6123Q',
     'monitor',
@@ -171,7 +190,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    8,
+    9,
     'es 12345',
     'est6666Q',
     'estore elétrico',
@@ -180,7 +199,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    9,
+    10,
     'trr 12345',
     'rrr6123',
     'torradeira',
@@ -189,7 +208,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    10,
+    11,
     'tst12345',
     '61237878',
     'tostadeira',
@@ -198,7 +217,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    11,
+    12,
     'cft12345',
     'cc6123',
     'cafeteira',
@@ -207,7 +226,7 @@ INSERT INTO equipamentoeletrico values (
 );
 
 INSERT INTO equipamentoeletrico values (
-    12,
+    13,
     'fgf12345',
     'ffff35442',
     'frigorifico',
@@ -215,6 +234,68 @@ INSERT INTO equipamentoeletrico values (
     1500
 );
 
+INSERT INTO equipamentoeletrico values (
+    14,
+    'cf332',
+    'mcf453342',
+    'maquina de cafe',
+    230,
+    1500
+);
+
+INSERT INTO equipamentoeletrico values (
+    15,
+    'serv31423',
+    'fss7542325',
+    'servidor',
+    230,
+    2000
+);
+
+INSERT INTO equipamentoeletrico values (
+    16,
+    'tmv423244',
+    'tel32453w',
+    'telemovel',
+    230,
+    500
+);
+
+INSERT INTO equipamentoeletrico values (
+    17,
+    'ont12445423',
+    'kspre343526',
+    'ont',
+    230,
+    500
+);
+
+INSERT INTO equipamentoeletrico values (
+    18,
+    'cmd13553',
+    'dfjvw5345',
+    'maquina de vending',
+    230,
+    1500
+);
+
+INSERT INTO equipamentoeletrico values (
+    19,
+    'crr24595',
+    'wovo4524536',
+    'carro',
+    230,
+    85000
+);
+
+INSERT INTO equipamentoeletrico values (
+    20,
+    'meo224453',
+    'ftys35442',
+    'box tv',
+    230,
+    1500
+);
 
 
 
