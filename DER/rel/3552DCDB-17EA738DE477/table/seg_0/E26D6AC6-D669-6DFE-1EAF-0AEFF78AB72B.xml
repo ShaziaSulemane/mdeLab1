@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C255D4D8-D8BD-323B-9890-236BA501CF16" name="tarifa">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E26D6AC6-D669-6DFE-1EAF-0AEFF78AB72B" name="equipamentoeletrico">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>1BC40A12-2F9F-3ED9-B3CB-A5184517458B</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>205DA23A-BC4D-2EA7-5CF9-8B73F27AE261</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_tarifa" id="F5013881-C449-8EA4-40D5-7C343945E683">
+<Column name="id_equipamentoeletrico" id="9634B14D-CAFE-D64C-E866-98769A40A04C">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>90B5A58A-EF90-F5CB-94B1-1D150D233D30</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>2B021109-8AD8-FD7C-D200-41EB84CD2C11</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,44 +19,46 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="preco_dia" id="E32756DA-FE7F-50F1-8B79-510CA73C0B7D">
+<Column name="referencia" id="71C20A0B-5CC0-309A-4551-4CB3F360E939">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>E99BB09B-FF12-886F-0CB7-46526FD1913F</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>24879DF0-B386-61EE-EB8A-F5235644B9CF</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT021</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="preco_tarde" id="EA95CBCB-7864-596E-0938-F870906194AE">
+<Column name="modelo" id="6ECFCFB8-21EE-80A2-9D00-569020788390">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>B5A38960-399E-78AA-8F3A-92F7AE2E7F3B</generatorID>
-<ownerDesignName>DER</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT021</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="preco_noite" id="7318BB99-2B38-4899-0FEE-F8CF4D0579C5">
-<createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>90881A80-FFEA-79BF-E643-19BF444CFFE1</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>9261B027-8F8D-4CD1-0FC0-42013ADD050C</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT021</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hora_mudanca_tarde" id="E23C11BB-5E69-906B-CED8-2A9AE6E70B72">
+<Column name="designacao" id="DC50E9B9-3526-4B1E-E63D-308089060442">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>B5F9B50A-BC85-9E23-B764-3EC0E8549CD6</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>F81E0DF3-51FD-7C0C-0922-76AA54AA427D</generatorID>
+<ownerDesignName>DER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tensao_alimentacao" id="60334F3E-DABF-E055-CF59-F2D2DE98D661">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>D9660324-6ED4-89A0-5426-456F6BACBE6E</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -64,10 +66,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hora_mudanca_noite" id="0E27973D-B804-CBF5-8A30-BFAE830FEFDA">
+<Column name="potencia_ativa" id="8AC5EAEE-645C-EFE7-793A-E7B0C39396DD">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>7AA77EC1-902F-0B58-FAE9-AD5EFB1D3CDA</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>8A020F98-F30D-F64F-5611-254F17F13451</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -77,16 +79,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="46E79943-803D-5CCD-EC05-94389AE0C58C" name="tarifa_bi-horaria_PK">
+<ind_PK_UK id="0A12E19E-4E37-233E-D2A7-B32C4BD5BA6A" name="equipamentoeletrico_PK">
 <createdBy>pedro</createdBy>
-<createdTime>2019-04-03 08:37:38 UTC</createdTime>
-<generatorID>DD91B49E-56EA-7DC2-9391-DE2C4DFB053A</generatorID>
+<createdTime>2019-04-05 12:07:03 UTC</createdTime>
+<generatorID>4CB1D429-3CE9-B592-28E0-F26AD7910C2D</generatorID>
 <ownerDesignName>DER</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F5013881-C449-8EA4-40D5-7C343945E683"/>
+<colUsage columnID="9634B14D-CAFE-D64C-E866-98769A40A04C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

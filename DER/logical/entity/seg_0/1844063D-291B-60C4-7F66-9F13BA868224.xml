@@ -41,14 +41,63 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="piso" id="196CC74E-021C-4737-633B-C10FFC6BE4CE">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-05 11:49:30 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="area" id="CCC58B3F-E8C5-35E7-2051-74DEAE8F58C0">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-05 11:49:45 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="altura" id="A1B6CF67-84FB-29CC-C745-D309B403EC4C">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-05 11:50:22 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_janelas" id="9D3827C6-939D-D4F2-1024-12B524F63C6B">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-05 11:50:59 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E1C53420-B828-A61A-0A44-627D97BB3646" name="divisao PK">
 <createdBy>pedro</createdBy>
 <createdTime>2019-03-27 10:17:26 UTC</createdTime>
 <ownerDesignName>DER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
