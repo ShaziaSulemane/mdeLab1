@@ -15,8 +15,8 @@ INSERT INTO edificio values (8, 'penitenciaria', 'Rua Bocage', 'Almada', '80.69º
 INSERT INTO edificio values (9, 'fabrica', 'Rua Bocage', 'Almada', '80.5ºN 33.2ºO', 1000, 1);
 
 INSERT INTO edificio values (10,'farmacia', 'Rua Cesario Verde', 'Almada', '83.4ºN 34.5ºO', 300, 1);
-INSERT INTO edificio values (3, 'maternidade','Rua Cesario Verde', 'Almada', '39.96ºN 8.96ºS', 1200, 1);
-INSERT INTO edificio values (6, 'discoteca', 'Rua Cesario Verde', 'Almada', '69.9ºN 3.45ºO', 200, 2);
+INSERT INTO edificio values (11, 'maternidade','Rua Cesario Verde', 'Almada', '39.96ºN 8.96ºS', 1200, 1);
+INSERT INTO edificio values (12, 'discoteca', 'Rua Cesario Verde', 'Almada', '69.9ºN 3.45ºO', 200, 2);
 
 /* equipamentos genericos */
 INSERT INTO equipamentoeletrico values (1, 'pc 12345', 'ASUS-2345', 'ASUS PORTABLE COMPUTER', 50, 450);
@@ -25,17 +25,17 @@ INSERT INTO equipamentoeletrico values (3, 'rr 2345', 'NOS', 'NOS ROUTER', 50, 1
 INSERT INTO equipamentoeletrico values (4, 'ilu 345', 'LED', 'LED LAMP', 80, 12);
 INSERT INTO equipamentoeletrico values (5, 'rf 7896', 'SAMSUNG', 'SAMSUNG FRIDGE', 250, 250);
 /*equipamentos especificos*/
-INSERT INTO equipamentoeletrico values (6, 'imp 345', 'CANON PRINTER', 120, 50);
-INSERT INTO equipamentoeletrico values (7, 'inc 345', 'ICU INCUBATOR', 45, 120);
-INSERT INTO equipamentoeletrico values (8, 'mr 1234', 'REGISTER MACHINE', 10, 5);
-INSERT INTO equipamentoeletrico values (9, 'sp 1456', 'SPEAKERS', 15, 5);
-INSERT INTO equipamentoeletrico values (10, 'mt 1545', 'MIX TABLE', 45, 120);
-INSERT INTO equipamentoeletrico values (11, 'pj 7895', 'PROJECTOR CANON', 45, 45);
-INSERT INTO equipamentoeletrico values (12, 'ex 1234', 'EXHAUST FAN', 10, 5);
-INSERT INTO equipamentoeletrico values (13, 'osc 123', 'MICROSCOPE', 10, 5);
-INSERT INTO equipamentoeletrico values (14, 'rb 1234', 'ASSEMBLING ROBOT', 250, 1500);
-INSERT INTO equipamentoeletrico values (15, 'mc 1523', 'MRI MACHINE', 300, 3500);
-INSERT INTO equipamentoeletrico values (16, 'vm 6479', 'VENDING MACHINE', 100, 300); 
+INSERT INTO equipamentoeletrico values (6, 'imp 345', 'CAN123', 'CANON PRINTER', 120, 50);
+INSERT INTO equipamentoeletrico values (7, 'inc 345', 'ICU123', 'ICU INCUBATOR', 45, 120);
+INSERT INTO equipamentoeletrico values (8, 'mr 1234', 'IREG123', 'REGISTER MACHINE', 10, 5);
+INSERT INTO equipamentoeletrico values (9, 'sp 1456', 'DRDRE', 'SPEAKERS', 15, 5);
+INSERT INTO equipamentoeletrico values (10, 'mt 1545', 'LILBEAT', 'MIX TABLE', 45, 120);
+INSERT INTO equipamentoeletrico values (11, 'pj 7895', 'CA-NON', 'PROJECTOR CANON', 45, 45);
+INSERT INTO equipamentoeletrico values (12, 'ex 1234', 'NUM1FAN', 'EXHAUST FAN', 10, 5);
+INSERT INTO equipamentoeletrico values (13, 'osc 123', 'ICCLOSE', 'MICROSCOPE', 10, 5);
+INSERT INTO equipamentoeletrico values (14, 'rb 1234', 'IASSEMBLE', 'ASSEMBLING ROBOT', 250, 1500);
+INSERT INTO equipamentoeletrico values (15, 'mc 1523', 'ICBRAIN', 'MRI MACHINE', 300, 3500);
+INSERT INTO equipamentoeletrico values (16, 'vm 6479', 'IFOOD', 'VENDING MACHINE', 100, 300); 
 
 /*habitacao*/
 INSERT INTO divisao values (1, 1, 0, 40, 2.5, 3);
@@ -45,10 +45,10 @@ INSERT INTO divisao values (3, 1, 2, 40, 2.5, 3);
 INSERT INTO divisao values (4, 2, 0, 400, 2.5, 6);
 INSERT INTO divisao values (5, 2, 1, 400, 2.5, 8);
 INSERT INTO divisao values (6, 2, 2, 400, 2.5, 5);
-/*maternidade*/
+/*maternidade 1*/
 INSERT INTO divisao values (7, 3, 0, 833, 2.5, 10);
 INSERT INTO divisao values (8, 3, 1, 833, 2.5, 10);
-INSERT INTO divisao values (9, 4, 2, 833, 2.5, 7);
+INSERT INTO divisao values (9, 3, 2, 833, 2.5, 7);
 /*loja*/
 INSERT INTO divisao values (10, 4, 0, 200, 2.5, 2);
 /*centro comercial*/
@@ -68,6 +68,13 @@ INSERT INTO divisao values (19, 9, 0, 500, 2.5, 3);
 INSERT INTO divisao values (20, 9, 1, 500, 2.5, 3);
 /*farmacia*/
 INSERT INTO divisao values (21, 10, 0, 300, 2.5, 1);
+/*maternidade 2*/
+INSERT INTO divisao values (22, 11, 0, 833, 2.5, 10);
+INSERT INTO divisao values (23, 11, 1, 833, 2.5, 10);
+INSERT INTO divisao values (24, 11, 2, 833, 2.5, 7);
+/*discoteca 2*/
+INSERT INTO divisao values (25, 12, 0, 200, 2.5, 4);
+
 
 INSERT INTO horario values (1, '14:00', '21:00');
 INSERT INTO horario values (2, '21:00', '24:00');
@@ -85,7 +92,7 @@ INSERT INTO anomalia values (2, 'horario de utilizacao indevido');
 INSERT INTO anomalia values (3, 'consumo energetico excessivo');
 
 /*consumos energeticos normais*/
-INSERT INTO consumoenergetico values ('14:00', '21:00', 1, 1);
+INSERT INTO consumoenergetico values (TO_DATE('HH:MM:SS','14:00'), '21:00', 1, 1);
 INSERT INTO consumoenergetico values ('21:00','00:00', 2, 1);
 INSERT INTO consumoenergetico values ('00:00', '7:00', 3, 1);
 INSERT INTO consumoenergetico values ('7:00','10:00', 4, 1);
@@ -445,9 +452,99 @@ INSERT INTO equipamentoeletrico_divisao values (300, 21, 1, 7, 7);
 INSERT INTO equipamentoeletrico_divisao values (301, 21, 1, 7, 7);
 INSERT INTO equipamentoeletrico_divisao values (302, 21, 5, 7, 7);
 
+/*maternidade 2*/
+/*piso 0*/
+INSERT INTO equipamentoeletrico_divisao values (303, 22, 1, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (304, 22, 5, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (305, 22, 12, 5,5 );
+INSERT INTO equipamentoeletrico_divisao values (306, 22, 16, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (307, 22, 2, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (308, 22, 2, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (309, 22, 16, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (310, 22, 15, 5, 5);
+INSERT INTO equipamentoeletrico_divisao values (311, 22, 3, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (312, 22, 3, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (313, 22, 3, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (314, 22, 4, 8, 11);
+INSERT INTO equipamentoeletrico_divisao values (315, 22, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (316, 22, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (317, 22, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (318, 22, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (319, 22, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (320, 22, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (321, 22, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (322, 22, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (323, 22, 7, 9, 9);
+/*piso 1*/
+INSERT INTO equipamentoeletrico_divisao values (324, 23, 1, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (325, 23, 5, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (326, 23, 12, 5, 5);
+INSERT INTO equipamentoeletrico_divisao values (327, 23, 16, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (328, 23, 2, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (329, 23, 2, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (330, 23, 16, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (331, 23, 15, 5, 5);
+INSERT INTO equipamentoeletrico_divisao values (332, 23, 3, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (333, 23, 3, 6, 11);
+INSERT INTO equipamentoeletrico_divisao values (334, 23, 3, 6, 12);
+INSERT INTO equipamentoeletrico_divisao values (335, 23, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (336, 23, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (337, 23, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (338, 23, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (339, 23, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (340, 23, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (341, 23, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (342, 23, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (343, 23, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (344, 23, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (345, 23, 15, 5, 5);
+/*piso 2*/
+INSERT INTO equipamentoeletrico_divisao values (346, 24, 1, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (347, 24, 5, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (348, 24, 12, 5, 5);
+INSERT INTO equipamentoeletrico_divisao values (349, 24, 16, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (350, 24, 2, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (351, 24, 2, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (352, 24, 16, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (353, 24, 15, 5, 5);
+INSERT INTO equipamentoeletrico_divisao values (354, 24, 3, 6, 13);
+INSERT INTO equipamentoeletrico_divisao values (355, 24, 3, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (356, 24, 3, 6, 6);
+INSERT INTO equipamentoeletrico_divisao values (357, 24, 4, 8, 6);
+INSERT INTO equipamentoeletrico_divisao values (358, 24, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (359, 24, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (360, 24, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (361, 24, 4, 8, 8);
+INSERT INTO equipamentoeletrico_divisao values (362, 24, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (363, 24, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (364, 24, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (365, 24, 7, 9, 9);
+INSERT INTO equipamentoeletrico_divisao values (366, 24, 7, 9, 9);
 
-
-
+/*discoteca 2*/
+INSERT INTO equipamentoeletrico_divisao values (367, 25, 10, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (368, 25, 2, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (369, 25, 5, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (370, 25, 10, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (371, 25, 8, 2, 3);
+INSERT INTO equipamentoeletrico_divisao values (372, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (373, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (374, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (375, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (376, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (377, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (378, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (379, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (380, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (381, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (382, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (383, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (384, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (385, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (386, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (387, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (388, 25, 4, 3, 3);
+INSERT INTO equipamentoeletrico_divisao values (389, 25, 4, 3, 3);
 
 
 
