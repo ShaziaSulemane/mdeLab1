@@ -76,15 +76,15 @@ INSERT INTO divisao values (24, 11, 2, 833, 2.5, 7);
 INSERT INTO divisao values (25, 12, 0, 200, 2.5, 4);
 
 
-INSERT INTO horario values (1, '14:00', '21:00');
-INSERT INTO horario values (2, '21:00', '24:00');
-INSERT INTO horario values (3, '00:00', '7:00');
-INSERT INTO horario values (4, '7:00', '10:00');
-INSERT INTO horario values (5, '11:00', '18:00');
-INSERT INTO horario values (6, '00:00', '24:00');
-INSERT INTO horario values (7, '9:00', '19:00');
-INSERT INTO horario values (8, '18:00', '21:00');
-INSERT INTO horario values (9, '10:00', '24:00');
+INSERT INTO horario values (1, TO_DATE('14:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'));
+INSERT INTO horario values (2, TO_DATE('21:00', 'HH24:MI'), TO_DATE('24:00', 'HH24:MI'));
+INSERT INTO horario values (3, TO_DATE('00:00', 'HH24:MI'), TO_DATE('07:00', 'HH24:MI'))
+INSERT INTO horario values (4, TO_DATE('07:00', 'HH24:MI'), TO_DATE('10:00', 'HH24:MI'))
+INSERT INTO horario values (5, TO_DATE('11:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'))
+INSERT INTO horario values (6, TO_DATE('00:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'))
+INSERT INTO horario values (7, TO_DATE('09:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'))
+INSERT INTO horario values (8, TO_DATE('18:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'))
+INSERT INTO horario values (9, TO_DATE('10:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'))
 
 /*anomalias*/
 INSERT INTO anomalia values (1, 'sem anomalia');
@@ -102,14 +102,14 @@ INSERT INTO consumoenergetico values (TO_DATE('18:00', 'HH24:MI'), TO_DATE('21:0
 INSERT INTO consumoenergetico values (TO_DATE('10:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'), 9, 1);
 
 /*consumos anomalos*/
-INSERT INTO consumoenergetico values ('9:00', '18:00', 10, 2);
-INSERT INTO consumoenergetico values ('13:00', '19:00', 11, 2);
-INSERT INTO consumoenergetico values ('8:00', '20:00', 12, 2);
-INSERT INTO consumoenergetico values ('11:00', '19:00', 13, 2);
-INSERT INTO consumoenergetico values ('3:00', '5:00', 14, 2);
-INSERT INTO consumoenergetico values ('12:00', '8:00', 15, 2);
-INSERT INTO consumoenergetico values ('12:00', '19:00', 16, 2);
-INSERT INTO consumoenergetico values ('20:00', '21:00', 17, 2);
+INSERT INTO consumoenergetico values (TO_DATE('09:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'), 10, 2);
+INSERT INTO consumoenergetico values (TO_DATE('13:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 11, 2);
+INSERT INTO consumoenergetico values (TO_DATE('08:00', 'HH24:MI'), TO_DATE('20:00', 'HH24:MI'), 12, 2);
+INSERT INTO consumoenergetico values (TO_DATE('11:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 13, 2);
+INSERT INTO consumoenergetico values (TO_DATE('03:00', 'HH24:MI'), TO_DATE('05:00', 'HH24:MI'), 14, 2);
+INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('20:00', 'HH24:MI'), 15, 2);
+INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 16, 2);
+INSERT INTO consumoenergetico values (TO_DATE('20:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'), 17, 2);
 
 /*habitacao*/
 /*piso 0*/
