@@ -113,7 +113,7 @@ INSERT INTO consumoenergetico values (TO_DATE('20:00', 'HH24:MI'), TO_DATE('21:0
 
 /*habitacao*/
 /*piso 0*/
-INSERT INTO equipamentoeletrico_divisao values (/*id relacao*/1, /*id divisao*/ 1, /*id equip*/1, /*id horario*/4, /*id consumo*/ );
+INSERT INTO equipamentoeletrico_divisao values (1, 1, 1, 4, 4);
 INSERT INTO equipamentoeletrico_divisao values (2, 1, 2, 4, 4);
 INSERT INTO equipamentoeletrico_divisao values (3, 1, 3, 4, 4);
 /*piso 1*/
