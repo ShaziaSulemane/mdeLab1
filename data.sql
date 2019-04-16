@@ -92,15 +92,14 @@ INSERT INTO anomalia values (2, 'horario de utilizacao indevido');
 INSERT INTO anomalia values (3, 'consumo energetico excessivo');
 
 /*consumos energeticos normais*/
-INSERT INTO consumoenergetico values (TO_DATE('HH:MM:SS','14:00'), '21:00', 1, 1);
-INSERT INTO consumoenergetico values ('21:00','00:00', 2, 1);
-INSERT INTO consumoenergetico values ('00:00', '7:00', 3, 1);
-INSERT INTO consumoenergetico values ('7:00','10:00', 4, 1);
-INSERT INTO consumoenergetico values ('11:00', '18:00', 5, 1);
-INSERT INTO consumoenergetico values ('00:00', '24:00', 6, 1);
-INSERT INTO consumoenergetico values ('9:00', '19:00', 7, 1);
-INSERT INTO consumoenergetico values ('18:00', '21:00', 8, 1);
-INSERT INTO consumoenergetico values ('10:00', '24:00', 9, 1);
+INSERT INTO consumoenergetico values (TO_DATE('21:00', 'HH24:MI'),TO_DATE('00:00', 'HH24:MI'), 2, 1);
+INSERT INTO consumoenergetico values (TO_DATE('00:00', 'HH24:MI'), TO_DATE('7:00', 'HH24:MI'), 3, 1);
+INSERT INTO consumoenergetico values (TO_DATE('7:00', 'HH24:MI'),TO_DATE('10:00', 'HH24:MI'), 4, 1);
+INSERT INTO consumoenergetico values (TO_DATE('11:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'), 5, 1);
+INSERT INTO consumoenergetico values (TO_DATE('00:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'), 6, 1);
+INSERT INTO consumoenergetico values (TO_DATE('9:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 7, 1);
+INSERT INTO consumoenergetico values (TO_DATE('18:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'), 8, 1);
+INSERT INTO consumoenergetico values (TO_DATE('10:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'), 9, 1);
 
 /*consumos anomalos*/
 INSERT INTO consumoenergetico values (TO_DATE('09:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'), 10, 2);
