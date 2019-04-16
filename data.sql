@@ -77,21 +77,21 @@ INSERT INTO divisao values (25, 12, 0, 200, 2.5, 4);
 
 
 INSERT INTO horario values (1, TO_DATE('14:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'));
-INSERT INTO horario values (2, TO_DATE('21:00', 'HH24:MI'), TO_DATE('24:00', 'HH24:MI'));
-INSERT INTO horario values (3, TO_DATE('00:00', 'HH24:MI'), TO_DATE('07:00', 'HH24:MI'))
-INSERT INTO horario values (4, TO_DATE('07:00', 'HH24:MI'), TO_DATE('10:00', 'HH24:MI'))
-INSERT INTO horario values (5, TO_DATE('11:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'))
-INSERT INTO horario values (6, TO_DATE('00:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'))
-INSERT INTO horario values (7, TO_DATE('09:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'))
-INSERT INTO horario values (8, TO_DATE('18:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'))
-INSERT INTO horario values (9, TO_DATE('10:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'))
-
+INSERT INTO horario values (2, TO_DATE('21:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'));
+INSERT INTO horario values (3, TO_DATE('00:00', 'HH24:MI'), TO_DATE('07:00', 'HH24:MI'));
+INSERT INTO horario values (4, TO_DATE('07:00', 'HH24:MI'), TO_DATE('10:00', 'HH24:MI'));
+INSERT INTO horario values (5, TO_DATE('11:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'));
+INSERT INTO horario values (6, TO_DATE('00:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'));
+INSERT INTO horario values (7, TO_DATE('09:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'));
+INSERT INTO horario values (8, TO_DATE('18:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'));
+INSERT INTO horario values (9, TO_DATE('10:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'));
 /*anomalias*/
 INSERT INTO anomalia values (1, 'sem anomalia');
 INSERT INTO anomalia values (2, 'horario de utilizacao indevido');
 INSERT INTO anomalia values (3, 'consumo energetico excessivo');
 
 /*consumos energeticos normais*/
+INSERT INTO consumoenergetico values (TO_DATE('01:00', 'HH24:MI'),TO_DATE('09:00', 'HH24:MI'), 1, 1);
 INSERT INTO consumoenergetico values (TO_DATE('21:00', 'HH24:MI'),TO_DATE('00:00', 'HH24:MI'), 2, 1);
 INSERT INTO consumoenergetico values (TO_DATE('00:00', 'HH24:MI'), TO_DATE('7:00', 'HH24:MI'), 3, 1);
 INSERT INTO consumoenergetico values (TO_DATE('7:00', 'HH24:MI'),TO_DATE('10:00', 'HH24:MI'), 4, 1);
