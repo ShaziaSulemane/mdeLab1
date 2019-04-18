@@ -70,11 +70,13 @@ INSERT INTO equipamentoeletrico_divisao values (390, 25, 4, 3, 18);
 SELECT
     equipamentoeletrico.designacao,
     TO_CHAR(consumoenergetico.horarioinicio, 'HH24:MI'),
-    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI')
+    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI'),
+    TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY'),
+    TO_CHAR (24*(consumoenergetico.horariofim - consumoenergetico.horarioinicio)*equipamentoeletrico.potencia_ativa)
 FROM equipamentoeletrico JOIN equipamentoeletrico_divisao 
 ON equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico 
-WHERE consumoenergetico.horarioinicio BETWEEN TO_DATE('11:00', 'HH24:MI') AND TO_DATE('18:00', 'HH24:MI');
+WHERE consumoenergetico.data_consumo BETWEEN TO_DATE('11/4/2019', 'DD/MM/YYYY') AND TO_DATE('15/4/2019', 'DD/MM/YYYY');
 
 /*RF 5*/
 SELECT 
@@ -100,12 +102,69 @@ SELECT
     equipamentoeletrico.designacao,
     equipamentoeletrico.potencia_ativa,
     TO_CHAR (consumoenergetico.horarioinicio, 'HH24:MI'),
-    TO_CHAR (consumoenergetico.horariofim, 'HH24:MI')
+    TO_CHAR (consumoenergetico.horariofim, 'HH24:MI'),
+    TO_CHAR (24 * (consumoenergetico.horariofim - consumoenergetico.horarioinicio)* equipamentoeletrico.potencia_ativa)  
 FROM equipamentoeletrico 
 JOIN equipamentoeletrico_divisao ON 
     equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON 
-    consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico;
+    consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico
+WHERE equipamentoeletrico_divisao.id_relacao = 1;
     
-    
+SELECT 
+    edificio.tipologia,
+    edificio.endereco,
+    equipamentoeletrico.designacao,
+    equipamentoeletrico.potencia_ativa,
+    TO_CHAR (consumoenergetico.horarioinicio, 'HH24:MI'),
+    TO_CHAR (consumoenergetico.horariofim, 'HH24:MI'),
+    TO_CHAR (24 * (consumoenergetico.horariofim - consumoenergetico.horarioinicio)* equipamentoeletrico.potencia_ativa)  
+FROM equipamentoeletrico 
+JOIN equipamentoeletrico_divisao ON 
+    equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
+JOIN consumoenergetico ON 
+    consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico
+JOIN divisao ON equipamentoeletrico_divisao.id_divisao = divisao.id_divisao   
+JOIN edificio ON divisao.id_edificio = edificio.id_edificio
+WHERE edificio.id_edificio = 1;
+  
+SELECT SUM (
+    TO_CHAR (24 * (consumoenergetico.horariofim - consumoenergetico.horarioinicio)* equipamentoeletrico.potencia_ativa)  
+)FROM equipamentoeletrico 
+JOIN equipamentoeletrico_divisao ON 
+    equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
+JOIN consumoenergetico ON 
+    consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico
+JOIN divisao ON equipamentoeletrico_divisao.id_divisao = divisao.id_divisao   
+JOIN edificio ON divisao.id_edificio = edificio.id_edificio
+WHERE edificio.id_edificio = 1;
+
+/*RF 8*/
+SELECT 
+    edificio.tipologia,
+    edificio.endereco,
+    equipamentoeletrico.designacao,
+    equipamentoeletrico.potencia_ativa,
+    TO_CHAR (consumoenergetico.horarioinicio, 'HH24:MI'),
+    TO_CHAR (consumoenergetico.horariofim, 'HH24:MI'),
+    TO_CHAR (24 * (consumoenergetico.horariofim - consumoenergetico.horarioinicio)* equipamentoeletrico.potencia_ativa)  
+FROM equipamentoeletrico 
+JOIN equipamentoeletrico_divisao ON 
+    equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
+JOIN consumoenergetico ON 
+    consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico
+JOIN divisao ON equipamentoeletrico_divisao.id_divisao = divisao.id_divisao   
+JOIN edificio ON divisao.id_edificio = edificio.id_edificio
+WHERE edificio.localidade = 'Lisboa';
+  
+SELECT SUM (
+    TO_CHAR (24 * (consumoenergetico.horariofim - consumoenergetico.horarioinicio)* equipamentoeletrico.potencia_ativa)  
+)FROM equipamentoeletrico 
+JOIN equipamentoeletrico_divisao ON 
+    equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
+JOIN consumoenergetico ON 
+    consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico
+JOIN divisao ON equipamentoeletrico_divisao.id_divisao = divisao.id_divisao   
+JOIN edificio ON divisao.id_edificio = edificio.id_edificio
+WHERE edificio.localidade = 'Lisboa';
     

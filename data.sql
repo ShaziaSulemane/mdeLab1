@@ -111,6 +111,7 @@ INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('20:0
 INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 16, 2);
 INSERT INTO consumoenergetico values (TO_DATE('20:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'), 17, 2);
 
+
 /*habitacao*/
 /*piso 0*/
 INSERT INTO equipamentoeletrico_divisao values (1, 1, 1, 4, 4);
