@@ -23,4 +23,15 @@ SELECT * FROM horario;
 SELECT * FROM equipamentoeletrico_divisao;
 SELECT * FROM tarifa;
 
+/*RF4*/
+SELECT
+    equipamentoeletrico.designacao,
+    TO_CHAR(consumoenergetico.horarioinicio, 'HH24:MI'),
+    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI')
+    /*anomalia,*/
+FROM equipamentoeletrico JOIN equipamentoeletrico_divisao 
+ON equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
+JOIN consumoenergetico ON consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico 
+WHERE consumoenergetico.horarioinicio BETWEEN TO_DATE('23/4/2019', 'DD/MM/YYYY') AND TO_DATE('25/4/2019', 'DD/MM/YYYY'); 
 
+    

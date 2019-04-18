@@ -91,25 +91,25 @@ INSERT INTO anomalia values (2, 'horario de utilizacao indevido');
 INSERT INTO anomalia values (3, 'consumo energetico excessivo');
 
 /*consumos energeticos normais*/
-INSERT INTO consumoenergetico values (TO_DATE('01:00', 'HH24:MI'),TO_DATE('09:00', 'HH24:MI'), 1, 1);
-INSERT INTO consumoenergetico values (TO_DATE('21:00', 'HH24:MI'),TO_DATE('00:00', 'HH24:MI'), 2, 1);
-INSERT INTO consumoenergetico values (TO_DATE('00:00', 'HH24:MI'), TO_DATE('7:00', 'HH24:MI'), 3, 1);
-INSERT INTO consumoenergetico values (TO_DATE('7:00', 'HH24:MI'),TO_DATE('10:00', 'HH24:MI'), 4, 1);
-INSERT INTO consumoenergetico values (TO_DATE('11:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'), 5, 1);
-INSERT INTO consumoenergetico values (TO_DATE('00:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'), 6, 1);
-INSERT INTO consumoenergetico values (TO_DATE('9:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 7, 1);
-INSERT INTO consumoenergetico values (TO_DATE('18:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'), 8, 1);
-INSERT INTO consumoenergetico values (TO_DATE('10:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'), 9, 1);
+INSERT INTO consumoenergetico values (TO_DATE('10/4/2019 - 01:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('12/4/2019 - 09:00', 'DD/MM/YYYY - HH24:MI'), 1, 1);
+INSERT INTO consumoenergetico values (TO_DATE('11/4/2019 - 21:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('16/4/2019 - 00:00', 'DD/MM/YYYY - HH24:MI'), 2, 1);
+INSERT INTO consumoenergetico values (TO_DATE('10/4/2019 - 00:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('16/4/2019 - 07:00', 'DD/MM/YYYY - HH24:MI'), 3, 1);
+INSERT INTO consumoenergetico values (TO_DATE('12/4/2019 - 07:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('15/4/2019 - 10:00', 'DD/MM/YYYY - HH24:MI'), 4, 1);
+INSERT INTO consumoenergetico values (TO_DATE('10/4/2019 - 11:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('13/4/2019 - 18:00', 'DD/MM/YYYY - HH24:MI'), 5, 1);
+INSERT INTO consumoenergetico values (TO_DATE('14/4/2019 - 00:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('16/5/2019 - 23:59', 'DD/MM/YYYY - HH24:MI'), 6, 1);
+INSERT INTO consumoenergetico values (TO_DATE('13/4/2019 - 09:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('14/4/2019 - 19:00', 'DD/MM/YYYY - HH24:MI'), 7, 1);
+INSERT INTO consumoenergetico values (TO_DATE('13/4/2019 - 18:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('15/4/2019 - 21:00', 'DD/MM/YYYY - HH24:MI'), 8, 1);
+INSERT INTO consumoenergetico values (TO_DATE('11/4/2019 - 10:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('13/4/2019 - 23:59', 'DD/MM/YYYY - HH24:MI'), 9, 1);
 
 /*consumos anomalos*/
-INSERT INTO consumoenergetico values (TO_DATE('09:00', 'HH24:MI'), TO_DATE('18:00', 'HH24:MI'), 10, 2);
-INSERT INTO consumoenergetico values (TO_DATE('13:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 11, 2);
-INSERT INTO consumoenergetico values (TO_DATE('08:00', 'HH24:MI'), TO_DATE('20:00', 'HH24:MI'), 12, 2);
-INSERT INTO consumoenergetico values (TO_DATE('11:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 13, 2);
-INSERT INTO consumoenergetico values (TO_DATE('03:00', 'HH24:MI'), TO_DATE('05:00', 'HH24:MI'), 14, 2);
-INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('20:00', 'HH24:MI'), 15, 2);
-INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 16, 2);
-INSERT INTO consumoenergetico values (TO_DATE('20:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'), 17, 2);
+INSERT INTO consumoenergetico values (TO_DATE('10/4/2019 - 09:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('14/4/2019 - 18:00', 'DD/MM/YYYY - HH24:MI'), 10, 2);
+INSERT INTO consumoenergetico values (TO_DATE('10/4/2019 - 13:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('12/4/2019 - 19:00', 'DD/MM/YYYY - HH24:MI'), 11, 2);
+INSERT INTO consumoenergetico values (TO_DATE('11/4/2019 - 08:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('16/4/2019 - 20:00', 'DD/MM/YYYY - HH24:MI'), 12, 2);
+INSERT INTO consumoenergetico values (TO_DATE('12/4/2019 - 11:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('15/4/2019 - 19:00', 'DD/MM/YYYY - HH24:MI'), 13, 2);
+INSERT INTO consumoenergetico values (TO_DATE('15/4/2019 - 03:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('15/4/2019 - 05:00', 'DD/MM/YYYY - HH24:MI'), 14, 2);
+INSERT INTO consumoenergetico values (TO_DATE('14/4/2019 - 12:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('16/5/2019 - 20:00', 'DD/MM/YYYY - HH24:MI'), 15, 2);
+INSERT INTO consumoenergetico values (TO_DATE('13/4/2019 - 12:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('14/4/2019 - 19:00', 'DD/MM/YYYY - HH24:MI'), 16, 2);
+INSERT INTO consumoenergetico values (TO_DATE('11/4/2019 - 20:00', 'DD/MM/YYYY - HH24:MI'), TO_DATE('13/4/2019 - 21:00', 'DD/MM/YYYY - HH24:MI'), 17, 2);
 
 /*habitacao*/
 /*piso 0*/
