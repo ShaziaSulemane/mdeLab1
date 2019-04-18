@@ -70,11 +70,12 @@ INSERT INTO equipamentoeletrico_divisao values (390, 25, 4, 3, 18);
 SELECT
     equipamentoeletrico.designacao,
     TO_CHAR(consumoenergetico.horarioinicio, 'HH24:MI'),
-    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI')
+    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI'),
+    TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY')
 FROM equipamentoeletrico JOIN equipamentoeletrico_divisao 
 ON equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico 
-WHERE consumoenergetico.horarioinicio BETWEEN TO_DATE('11:00', 'HH24:MI') AND TO_DATE('18:00', 'HH24:MI');
+WHERE consumoenergetico.data_consumo BETWEEN TO_DATE('11/4/2019', 'DD/MM/YYYY') AND TO_DATE('15/4/2019', 'DD/MM/YYYY');
 
 /*RF 5*/
 SELECT 

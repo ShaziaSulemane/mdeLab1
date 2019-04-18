@@ -23,7 +23,8 @@ CREATE TABLE consumoenergetico (
     horarioinicio          DATE NOT NULL,
     horariofim             DATE NOT NULL,
     id_consumoenergetico   INTEGER NOT NULL,
-    id_anomalia            INTEGER NOT NULL
+    id_anomalia            INTEGER NOT NULL,
+    data_consumo           DATE
 );
 
 ALTER TABLE consumoenergetico ADD CONSTRAINT consumoenergetico_pk PRIMARY KEY ( id_consumoenergetico );
