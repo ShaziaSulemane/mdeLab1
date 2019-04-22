@@ -69,12 +69,15 @@ INSERT INTO equipamentoeletrico_divisao values (390, 25, 4, 3, 18);
 /*RF4*/
 SELECT
     equipamentoeletrico.designacao,
-    /*TO_CHAR(consumoenergetico.horarioinicio, 'HH24:MI'),
-    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI'),*/
-    TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY')
+    TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY'),
+    TO_CHAR(24*(consumoenergetico.horariofim - consumoenergetico.horarioinicio)*equipamentoeletrico.potencia_ativa),
+    TO_CHAR (calcula_preco(edificio.id_tarifa, consumoenergetico.horarioinicio, consumoenergetico.horariofim,
+        24*(consumoenergetico.horariofim - consumoenergetico.horarioinicio)*equipamentoeletrico.potencia_ativa))
 FROM equipamentoeletrico JOIN equipamentoeletrico_divisao 
 ON equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico 
+JOIN divisao ON equipamentoeletrico_divisao.id_divisao = divisao.id_divisao
+JOIN edificio ON divisao.id_edificio = edificio.id_edificio
 WHERE consumoenergetico.data_consumo BETWEEN TO_DATE('11/4/2019', 'DD/MM/YYYY') AND TO_DATE('15/4/2019', 'DD/MM/YYYY');
 
 /*RF 5*/
@@ -84,14 +87,12 @@ SELECT
     divisao.piso,
     equipamentoeletrico.designacao,
     equipamentoeletrico.potencia_ativa,
-    /*consumoenergetico.horarioinicio,
-    consumoenergetico.horariofim,*/
     TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY')
 FROM divisao JOIN edificio ON divisao.id_edificio = edificio.id_edificio
 JOIN equipamentoeletrico_divisao ON divisao.id_divisao = equipamentoeletrico_divisao.id_divisao
 JOIN equipamentoeletrico ON equipamentoeletrico_divisao.id_equipamentoeletrico = equipamentoeletrico.id_equipamentoeletrico
 JOIN consumoenergetico ON equipamentoeletrico_divisao.id_consumoenergetico = consumoenergetico.id_consumoenergetico
-WHERE edificio.id_edificio = 1 
+WHERE edificio.id_edificio = 2 
 AND consumoenergetico.data_consumo BETWEEN TO_DATE('11/4/2019', 'DD/MM/YYYY') 
     AND TO_DATE('15/4/2019', 'DD/MM/YYYY');
 
@@ -106,6 +107,5 @@ JOIN equipamentoeletrico_divisao ON
     equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON 
     consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico;
-    
     
     

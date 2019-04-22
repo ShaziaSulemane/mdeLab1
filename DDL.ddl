@@ -34,7 +34,7 @@ CREATE TABLE divisao (
     id_edificio      INTEGER NOT NULL,
     piso             INTEGER NOT NULL,
     area             INTEGER NOT NULL,
-    altura           FLOAT NOT NULL,
+    altura           INTEGER NOT NULL,
     numero_janelas   INTEGER NOT NULL
 );
 
@@ -86,8 +86,8 @@ CREATE TABLE tarifa (
     preco_dia            FLOAT NOT NULL,
     preco_tarde          FLOAT,
     preco_noite          FLOAT NOT NULL,
-    hora_mudanca_tarde   INTEGER NOT NULL,
-    hora_mudanca_noite   INTEGER NOT NULL
+    hora_mudanca_tarde   DATE NOT NULL,
+    hora_mudanca_noite   DATE NOT NULL
 );
 
 ALTER TABLE tarifa ADD CONSTRAINT "tarifa_bi-horaria_PK" PRIMARY KEY ( id_tarifa );
