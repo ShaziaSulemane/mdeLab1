@@ -1,14 +1,6 @@
-DROP PACKAGE package_dml;
-DROP PROCEDURE create_div;
 
-/*CREATE SEQUENCE id_div
- START WITH     1
- INCREMENT BY   1
- NOCACHE
- NOCYCLE; */
 
-DROP PROCEDURE create_div;
-         
+
 CREATE OR REPLACE PROCEDURE create_div IS
        i INTEGER := 1;
        j INTEGER :=1;
