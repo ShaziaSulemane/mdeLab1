@@ -26,58 +26,15 @@ SELECT * FROM horario;
 SELECT * FROM equipamentoeletrico_divisao;
 SELECT * FROM tarifa;
 
-/*RF 2*/
-SELECT 
-    consumoenergetico.id_consumoenergetico, 
-    TO_CHAR(consumoenergetico.horarioinicio, 'HH24:MI'),
-    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI'),
-    anomalia.tipoanomalia,
-    TO_CHAR(horario.hora_inicio, 'HH24:MI'),
-    TO_CHAR(horario.hora_fim, 'HH24:MI'),
-    edificio.tipologia
-FROM consumoenergetico JOIN anomalia ON consumoenergetico.id_anomalia = anomalia.id_anomalia
-JOIN equipamentoeletrico_divisao ON equipamentoeletrico_divisao.id_consumoenergetico = consumoenergetico.id_consumoenergetico
-JOIN divisao ON equipamentoeletrico_divisao.id_divisao = divisao.id_divisao
-JOIN edificio ON divisao.id_edificio = edificio.id_edificio
-JOIN horario ON equipamentoeletrico_divisao.id_horario = horario.id_horario
-WHERE edificio.tipologia = 'penitenciaria';
-
-UPDATE consumoenergetico SET id_anomalia = 1, horarioinicio = TO_DATE('18:00', 'HH24:MI'), 
-horariofim = TO_DATE ('21:00', 'HH24:MI')
-WHERE id_consumoenergetico = 11;
-
-SELECT 
-    TO_CHAR(consumoenergetico.horarioinicio, 'HH24:MI'),
-    TO_CHAR(consumoenergetico.horariofim, 'HH24:MI')
-FROM consumoenergetico WHERE horarioinicio 
-    BETWEEN TO_DATE('10:00', 'HH24:MI') AND TO_DATE('17:00', 'HH24:MI') 
-AND horariofim 
-    BETWEEN TO_DATE('18:00', 'HH24:MI') AND TO_DATE('21:00', 'HH24:MI');
-
-INSERT INTO consumoenergetico values (TO_DATE('11:22', 'HH24:MI'),TO_DATE('18:34', 'HH24:MI'), 18, 1);
-DELETE consumoenergetico WHERE horarioinicio 
-    BETWEEN TO_DATE ('11:21', 'HH24:MI') AND TO_DATE ('11:23', 'HH24:MI') 
-AND horariofim 
-    BETWEEN TO_DATE ('18:33', 'HH24:MI') AND TO_DATE ('18:35', 'HH24:MI');
-
-/*RF 3*/
-INSERT INTO consumoenergetico values
-    TO_DATE('29-Oct-18 14:34', 'DD-Mon-YY HH24:MI'), 
-    TO_DATE('29-Oct-18 17:34', 'DD-Mon-YY HH24:MI'), 18, 2);
-INSERT INTO equipamentoeletrico_divisao values (390, 25, 4, 3, 18);
+/*RF 2 e RF 3*/
+--create consumo  
+CREATE_CONSUMO();
+--update consumo
+UPDATE_CONSUMO();
+--delete consumo
+DELETE_CONSUMO();
 
 /*RF4*/
-SELECT
-    equipamentoeletrico.designacao,
-    TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY'),
-    TO_CHAR(24*(consumoenergetico.horariofim - consumoenergetico.horarioinicio)*equipamentoeletrico.potencia_ativa),
-    TO_CHAR (calcula_preco(edificio.id_tarifa, consumoenergetico.horarioinicio, consumoenergetico.horariofim,equipamentoeletrico.potencia_ativa))
-FROM equipamentoeletrico JOIN equipamentoeletrico_divisao 
-ON equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
-JOIN consumoenergetico ON consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico 
-JOIN divisao ON equipamentoeletrico_divisao.id_divisao = divisao.id_divisao
-JOIN edificio ON divisao.id_edificio = edificio.id_edificio
-WHERE consumoenergetico.data_consumo BETWEEN TO_DATE('11/4/2019', 'DD/MM/YYYY') AND TO_DATE('15/4/2019', 'DD/MM/YYYY');
 
 /*RF 5*/
 SELECT 
@@ -86,12 +43,14 @@ SELECT
     divisao.piso,
     equipamentoeletrico.designacao,
     equipamentoeletrico.potencia_ativa,
+    /*consumoenergetico.horarioinicio,
+    consumoenergetico.horariofim,*/
     TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY')
 FROM divisao JOIN edificio ON divisao.id_edificio = edificio.id_edificio
 JOIN equipamentoeletrico_divisao ON divisao.id_divisao = equipamentoeletrico_divisao.id_divisao
 JOIN equipamentoeletrico ON equipamentoeletrico_divisao.id_equipamentoeletrico = equipamentoeletrico.id_equipamentoeletrico
 JOIN consumoenergetico ON equipamentoeletrico_divisao.id_consumoenergetico = consumoenergetico.id_consumoenergetico
-WHERE edificio.id_edificio = 2 
+WHERE edificio.id_edificio = 1 
 AND consumoenergetico.data_consumo BETWEEN TO_DATE('11/4/2019', 'DD/MM/YYYY') 
     AND TO_DATE('15/4/2019', 'DD/MM/YYYY');
 
@@ -106,3 +65,6 @@ JOIN equipamentoeletrico_divisao ON
     equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON 
     consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico;
+    
+    
+    
