@@ -71,8 +71,7 @@ SELECT
     equipamentoeletrico.designacao,
     TO_CHAR(consumoenergetico.data_consumo, 'DD/MM/YYYY'),
     TO_CHAR(24*(consumoenergetico.horariofim - consumoenergetico.horarioinicio)*equipamentoeletrico.potencia_ativa),
-    TO_CHAR (calcula_preco(edificio.id_tarifa, consumoenergetico.horarioinicio, consumoenergetico.horariofim,
-        24*(consumoenergetico.horariofim - consumoenergetico.horarioinicio)*equipamentoeletrico.potencia_ativa))
+    TO_CHAR (calcula_preco(edificio.id_tarifa, consumoenergetico.horarioinicio, consumoenergetico.horariofim,equipamentoeletrico.potencia_ativa))
 FROM equipamentoeletrico JOIN equipamentoeletrico_divisao 
 ON equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico 
@@ -107,5 +106,3 @@ JOIN equipamentoeletrico_divisao ON
     equipamentoeletrico.id_equipamentoeletrico = equipamentoeletrico_divisao.id_equipamentoeletrico
 JOIN consumoenergetico ON 
     consumoenergetico.id_consumoenergetico = equipamentoeletrico_divisao.id_consumoenergetico;
-    
-    
