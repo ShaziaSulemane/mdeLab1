@@ -85,9 +85,9 @@ CREATE TABLE tarifa (
     id_tarifa            INTEGER NOT NULL,
     preco_dia            FLOAT NOT NULL,
     preco_tarde          FLOAT,
-    preco_noite          FLOAT NOT NULL,
-    hora_mudanca_tarde   INTEGER NOT NULL,
-    hora_mudanca_noite   INTEGER NOT NULL
+    preco_noite          FLOAT,
+    hora_mudanca_tarde   DATE,
+    hora_mudanca_noite   DATE
 );
 
 ALTER TABLE tarifa ADD CONSTRAINT "tarifa_bi-horaria_PK" PRIMARY KEY ( id_tarifa );
