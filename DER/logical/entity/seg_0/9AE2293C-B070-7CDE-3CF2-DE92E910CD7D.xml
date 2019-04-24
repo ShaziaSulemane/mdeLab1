@@ -27,6 +27,32 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="hora_inicio" id="5F64DD80-1BE4-D3C8-9C2D-A5D88184F34C">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-24 15:04:24 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora_fim" id="AB454CC9-CFE4-36CB-4AB4-DCFB32C7471B">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-24 15:04:37 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7865416E-71DE-4A35-965A-1A79E02534C2" name="horario PK">

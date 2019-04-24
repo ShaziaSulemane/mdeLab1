@@ -65,6 +65,19 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="data_consumo" id="DBD254A5-BE5E-8367-40B9-B98F73733900">
+<createdBy>pedro</createdBy>
+<createdTime>2019-04-24 15:08:50 UTC</createdTime>
+<ownerDesignName>DER</ownerDesignName>
+<engineerTo>
+<item key="3552DCDB-0ED9-BE04-1ADA-17EA738DE477" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9CBCB6E5-0229-DB10-6749-3FA0C4A3C481" name="consumoenergetico PK">
@@ -77,7 +90,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>F4E6ADEB-DBDA-59EB-1811-CC54B190A12A</attributeRef>
-<attributeRef>D37E1E73-BC41-B105-6D94-CE99A76267F9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
