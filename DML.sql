@@ -19,7 +19,7 @@ CREATE OR REPLACE PROCEDURE create_div IS
        raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 END;
  
- CREATE OR REPLACE PROCEDURE create_equipele_div IS
+CREATE OR REPLACE PROCEDURE create_equipele_div IS
        i INTEGER := 1;
        j INTEGER :=1;
        equipele_div INTEGER := 1;
@@ -28,7 +28,7 @@ END;
             LOOP
             WHILE j <= 10
                 LOOP
-                INSERT INTO dequipamentoeletrico_divisao values (equipele_div, i, j, 
+                INSERT INTO equipamentoeletrico_divisao values (equipele_div, i, 
                     DBMS_RANDOM.value(low => 1, high => 16),
                     DBMS_RANDOM.value(low => 1, high => 9), 
                     DBMS_RANDOM.value(low => 1, high => 17));

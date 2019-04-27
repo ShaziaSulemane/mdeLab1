@@ -8,13 +8,13 @@ UPDATE tarifa SET preco_dia = 0.3 WHERE id_tarifa = 1;
 UPDATE tarifa SET hora_mudanca_tarde = 13 WHERE id_tarifa = 1;
 
 /*DELETE*/
-DELETE edificio WHERE id_edificio = 1;
-DELETE divisao WHERE id_edificio = 2; 
-DELETE consumoenergetico WHERE id_anomalia = 2;
-DELETE equipamentoeletrico_divisao WHERE id_divisao = 1;
+DELETE edificio WHERE edificio.id_edificio = 1;
+DELETE divisao WHERE divisao.id_edificio = 2; 
+DELETE consumoenergetico WHERE consumoenergetico.id_anomalia = 2;
+DELETE equipamentoeletrico_divisao WHERE equipamentoeletrico_divisao.id_divisao = 1;
 DELETE horario WHERE hora_inicio BETWEEN TO_CHAR('12:00', 'HH24:MI') AND TO_CHAR('14:00', 'HH24:MI');
 DELETE equipamentoeletrico WHERE tensao_alimentacao = 50;
-DELETE tarifa WHERE id_tarifa = 1;
+DELETE tarifa WHERE tarifa.id_tarifa = 1;
 
 /*READ*/
 SELECT * FROM edificio;
@@ -27,11 +27,11 @@ SELECT * FROM tarifa;
 
 /*RF 2 e RF 3*/
 --create consumo  
-CREATE_CONSUMO(TO_DATE(), TO_DATE(), TO_DATE(), 1, 2, 4);
+CREATE_CONSUMO(TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), TO_DATE('12-04-2019', 'DD-MM-YYYY'), 1, 2, 4);
 --update consumo
-UPDATE_CONSUMO(3, TO_DATE(), TO_DATE());
+UPDATE_CONSUMO(3, TO_DATE('21:00', 'HH24:MI'), TO_DATE('23:50', 'HH24:MI'));
 --delete consumo
-DELETE_CONSUMO(1, TO_DATE());
+DELETE_CONSUMO(1, TO_DATE('13-04-2019', 'DD-MM-YYYY'));
 
 /*RF4*/
 SELECT
