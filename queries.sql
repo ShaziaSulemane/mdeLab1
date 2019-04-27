@@ -26,6 +26,16 @@ SELECT * FROM equipamentoeletrico_divisao;
 SELECT * FROM tarifa;
 
 /*RF 2 e RF 3*/
+-- insert consumo
+INSERT INTO consumoenergetico values (TO_DATE('01:30', 'HH24:MI'),TO_DATE('09:30', 'HH24:MI'), 18, NULL, TO_DATE('10/4/2019', 'DD/MM/YYYY'));
+-- update consumo
+UPDATE consumoenergetico SET hora_inicio = TO_DATE('14:00', 'HH24:MI') WHERE id_consumo = 3;
+-- delete consumo
+DELETE equipamentoeletrico WHERE tensao_alimentacao = 50;
+-- read consumo
+SELECT * FROM consumoenergetico;
+
+
 --create consumo  
 CREATE_CONSUMO(TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), TO_DATE('12-04-2019', 'DD-MM-YYYY'), 1, 2, 4);
 --update consumo
