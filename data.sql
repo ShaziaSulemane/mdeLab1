@@ -1,4 +1,3 @@
-BEGIN
 INSERT INTO tarifa values (1, 0.25, 0.20, 0.15, TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'));
 INSERT INTO tarifa values (2, 0.25, 0.25, 0.25, TO_DATE('16:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'));
 
@@ -38,6 +37,7 @@ INSERT INTO equipamentoeletrico values (15, 'mc 1523', 'ICBRAIN', 'MRI MACHINE',
 INSERT INTO equipamentoeletrico values (16, 'vm 6479', 'IFOOD', 'VENDING MACHINE', 100, 3000); 
 create_div();
 
+
 INSERT INTO horario values (1, TO_DATE('14:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'));
 INSERT INTO horario values (2, TO_DATE('21:00', 'HH24:MI'), TO_DATE('23:59', 'HH24:MI'));
 INSERT INTO horario values (3, TO_DATE('00:00', 'HH24:MI'), TO_DATE('07:00', 'HH24:MI'));
@@ -72,6 +72,3 @@ INSERT INTO consumoenergetico values (TO_DATE('03:00', 'HH24:MI'), TO_DATE('05:0
 INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('20:00', 'HH24:MI'), 15, 2,TO_DATE('10/4/2019', 'DD/MM/YYYY'));
 INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 16, 2,TO_DATE('13/4/2019', 'DD/MM/YYYY'));
 INSERT INTO consumoenergetico values (TO_DATE('20:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'), 17, 2,TO_DATE('15/4/2019', 'DD/MM/YYYY'));
-create_equip_div();
-
-END;
