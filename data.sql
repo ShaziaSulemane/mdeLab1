@@ -1,3 +1,4 @@
+BEGIN
 INSERT INTO tarifa values (1, 0.25, 0.20, 0.15, TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'));
 INSERT INTO tarifa values (2, 0.25, 0.25, 0.25, TO_DATE('16:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'));
 
@@ -80,3 +81,4 @@ INSERT INTO consumoenergetico values (TO_DATE('03:00', 'HH24:MI'), TO_DATE('05:0
 INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('20:00', 'HH24:MI'), 15, 2,TO_DATE('10/4/2019', 'DD/MM/YYYY'), 12);
 INSERT INTO consumoenergetico values (TO_DATE('12:00', 'HH24:MI'), TO_DATE('19:00', 'HH24:MI'), 16, 2,TO_DATE('13/4/2019', 'DD/MM/YYYY'), 13);
 INSERT INTO consumoenergetico values (TO_DATE('20:00', 'HH24:MI'), TO_DATE('21:00', 'HH24:MI'), 17, 2,TO_DATE('15/4/2019', 'DD/MM/YYYY'), 14);
+END;

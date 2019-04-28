@@ -21,7 +21,7 @@ UPDATE edificio SET area = 150 WHERE tipologia = 'loja';
 UPDATE divisao SET numero_janelas = 4 WHERE id_edificio = 4;
 UPDATE divisao SET numero_janelas = 4 WHERE id_edificio = 4;
 UPDATE tarifa SET preco_dia = 0.3 WHERE id_tarifa = 1;
-UPDATE tarifa SET hora_mudanca_tarde = 13 WHERE id_tarifa = 1;
+UPDATE tarifa SET hora_mudanca_tarde = TO_DATE('13:00', 'HH24:MI') WHERE id_tarifa = 1;
 
 /*DELETE*/
 DELETE edificio WHERE id_edificio = 1;
@@ -56,33 +56,29 @@ DECLARE
 BEGIN
 IF (:OLD.HORARIOFIM <> :NEW.HORARIOFIM OR :OLD.HORARIOINICIO <> :NEW.HORARIOINICIO) THEN
     UPDATE consumoenergetico SET id_anomalia = 2 
-        WHERE consumoenergetico.id_consumoenergetico = GLOBAL_VARIABLES.value_id;
+        WHERE consumoenergetico.id_consumoenergetico = :NEW.id_consumoenergetico;
     DBMS_OUTPUT.put_line('anomaly - updated');
 END IF;
 
     SELECT horario.hora_inicio INTO h_inicio FROM horario 
 JOIN equipamentoeletrico_divisao ON equipamentoeletrico_divisao.id_horario = horario.id_horario
 JOIN consumoenergetico ON consumoenergetico.id_relacao = equipamentoeletrico_divisao.id_relacao
-WHERE consumoenergetico.id_consumoenergetico = GLOBAL_VARIABLES.VALUE_ID;
+WHERE consumoenergetico.id_consumoenergetico = :NEW.id_consumoenergetico;
 
     SELECT horario.hora_inicio INTO h_fim FROM horario 
 JOIN equipamentoeletrico_divisao ON equipamentoeletrico_divisao.id_horario = horario.id_horario
 JOIN consumoenergetico ON consumoenergetico.id_relacao = equipamentoeletrico_divisao.id_relacao
-WHERE consumoenergetico.id_consumoenergetico = GLOBAL_VARIABLES.VALUE_ID;
+WHERE consumoenergetico.id_consumoenergetico = :NEW.id_consumoenergetico;
 
 IF :NEW.HORARIOFIM = H_FIM AND :NEW.HORARIOINICIO = H_INICIO THEN
     UPDATE consumoenergetico SET id_anomalia = 1
-        WHERE consumoenergetico.id_consumoenergetico = GLOBAL_VARIABLES.value_id;
+        WHERE consumoenergetico.id_consumoenergetico = :NEW.id_consumoenergetico;
     DBMS_OUTPUT.put_line('no anomaly - updated');
 END IF;
 END;
 --UPDATE CONSUMOS
-DECLARE
-    value_id INTEGER;
-BEGIN
 UPDATE consumoenergetico SET data_consumo = TO_DATE('15-04-2019', 'DD-MM-YYYY')
-    WHERE id_consumoenergetico = 1 RETURNING id_consumoenergetico INTO GLOBAL_VARIABLES.VALUE_ID;
-END;
+    WHERE id_consumoenergetico = 1;
 --select consumoenergetico
 SELECT * FROM consumoenergetico;
 
