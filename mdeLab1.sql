@@ -55,21 +55,3 @@ create table anomalias (
     consumoAnomalo_id NUMBER,
     tipoAnomalia VARCHAR(20)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
